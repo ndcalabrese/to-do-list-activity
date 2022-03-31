@@ -8,6 +8,11 @@ body {
     color: #38ef7d;
 }
 
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
 #app-container {
     display:flex;
     flex-direction: column;
@@ -40,7 +45,6 @@ body {
     list-style-type: "► ";
 }
 .to-do-list-item {
-    text-decoration-color: red;
     padding: 2px;
 }
 #input-form-container {

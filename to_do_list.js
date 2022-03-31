@@ -40,7 +40,7 @@ function checkOffListItem(event) {
 
     // Cross out the list item that was clicked
     event.target.style.textDecoration = "line-through";
-    event.target.style.textDecorationColor = "red";
+    event.target.style.textDecorationColor = "#fbb03b";
 
     // Remove the list item element that triggered the event
     setTimeout(function() {
