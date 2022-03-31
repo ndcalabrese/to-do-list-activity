@@ -11,19 +11,26 @@ function addNewListItem(event) {
     // Store user input from textBox
     let userInput = document.getElementById("text-box").value;
 
-    // Clears the user input from textBox
-    document.getElementById("text-box").value = "";
+    // Checks to see if userInput is blank
+    // If it is, alert the user
+    if (userInput != "") {
+        
+        // Clears the user input from textBox
+        document.getElementById("text-box").value = "";
 
-    // Create a new list item node in the document and assign it to
-    // a variable
-    const newToDoItem = document.createElement("li");   
+        // Create a new list item node in the document and assign it to
+        // a variable
+        const newToDoItem = document.createElement("li");   
 
-    // Edit the innerHTML of the new list item node
-    newToDoItem.innerHTML = userInput;
+        // Edit the innerHTML of the new list item node
+        newToDoItem.innerHTML = userInput;
 
-    // Append the new list item node as a child of toDoList
-    toDoList.appendChild(newToDoItem);
-
+        // Append the new list item node as a child of toDoList
+        toDoList.appendChild(newToDoItem);
+    
+    } else { 
+        alert("Field cannot be empty.")
+    }
 }
 
 // Function to cross out a list item and then remove it

@@ -1,11 +1,23 @@
+html, body {
+    height: 100%;
+}
+
 body {
-    background-color: #89ed80;
+    background-image: linear-gradient(to right, #141e30, #243b55);
+    font-family: 'Nokora', sans-serif;
+    color: white;
+}
+
+#app-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 .to-do-list-container {
 
 }
 #to-do-list {
-
+    list-style-type: "➢ ";
 }
 .to-do-list-item {
 
@@ -20,5 +32,5 @@ body {
 
 }
 #add-button {
-
+    
 }
