@@ -25,6 +25,8 @@ function addNewListItem(event) {
         // Edit the innerHTML of the new list item node
         newToDoItem.innerHTML = userInput;
 
+        newToDoItem.setAttribute("class", "to-do-list-item");
+
         // Append the new list item node as a child of toDoList
         toDoList.appendChild(newToDoItem);
     
@@ -38,6 +40,7 @@ function checkOffListItem(event) {
 
     // Cross out the list item that was clicked
     event.target.style.textDecoration = "line-through";
+    event.target.style.textDecorationColor = "red";
 
     // Remove the list item element that triggered the event
     setTimeout(function() {
